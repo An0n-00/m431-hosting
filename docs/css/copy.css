@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1758ae;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 90vh;
+}
+
+/* Flex Boxes set */
+
+li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #1758ae;
+    font-weight: bold;
+}
+
+/* Lists and Links set */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(189, 224, 255);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Important: If you want to use justify-content and it is not working, select the above element and give it flex-grow: 1*/
+/* Finished with flex header. Adding hover links. */
+
+.hidden {
+    display: none;
+    background-color: rgb(34, 112, 229);
+    padding: 8px;
+    border-radius: 7px;
+    box-shadow: 5px 10px 15px rgb(138, 200, 255);
+    left: -8px;
+}
+
+
+
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li:hover .hidden {
+    display: block;
+    position: absolute;
+}
+/* To add a valid popup, hide the so called popup by using display: none; after that select the list item that when hovered on and is followed by the hidden class and set it to position absolute and display block. you can change all the fancy stuff in the hidden class. if you want to move the container, select the list item you will hover on and put that relative!*/
+
+/*HEADER NAV IS FINISHED. ADDING SIDEBAR!*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+main > section.main-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+/* finnished with homework*/
+
+.copyright {
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+#license-text {
+    text-align: justify;
+    margin: 10px;
+    font-size: small;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 15px;
+    text-align: center;
+}

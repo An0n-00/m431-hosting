@@ -1,0 +1,154 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    text-shadow: 5px 5px 5px lightgray;
+    color: dodgerblue;
+}
+
+body {
+    padding: 16px;
+}
+
+.rechnungsadresse {
+    margin-left: auto;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.ort {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: small;
+    margin-top: 130px;
+    height: 00px;
+}
+
+.trust {
+    font-size: small;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.anhang {
+    margin-bottom: 15px;
+}
+
+.anhang ol {
+    padding-left: 19px;
+}
+
+img.test {
+    border: 1px solid black;
+    box-shadow: 10px 10px 15px silver;
+}
+
+p > a {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: large;
+    display: inline;
+}
+
+h3 > a {
+    color: #4fa8ff;
+    font-weight: bold;
+}
+
+h2 > a {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+}
+
+
+/* Lists */
+ul[role=menu] {
+    width: 345px;
+    height: 245px;
+    padding-top: 28px;
+    padding-left: 28px;
+    border-radius: 40px;
+    background-color: #d5d5d5;
+    list-style-type: disc;
+}
+
+ul[role=menu] > li > a {
+    text-shadow: 5px 5px 5px silver;
+    color: #4fa8ff;
+    line-height: 2;
+    font-weight: bold;
+    font-size: x-large;
+}
+/* end Lists */
+
+/* Table */
+table {
+    background-color: #e8e8e8;
+    width: 500px;
+    border-spacing: 13px;
+    margin-bottom: 60px;
+    box-shadow: 1px 1px 2px darkgray;
+    border-radius: 4px;
+}
+
+table > caption {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table thead th:nth-child(1) {
+    text-align: center;
+}
+
+table thead th:nth-child(2) {
+    text-align: left;
+}
+
+table thead th:nth-child(3) {
+    text-align: right;
+}
+
+table td:nth-child(odd) {
+    text-align: right;
+}
+
+table tbody td:nth-child(even) {
+    text-align: left;
+}
+
+table tfoot tr td:nth-child(1) {
+    text-align: left;
+}
+
+table tfoot td:nth-child(2) {
+    text-align: right;
+}
+
+tfoot {
+    font-weight: bold;
+    text-align: left;
+    height: 5px;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: #84b1e8;
+}
+
+table tbody tr td:nth-child(1) {
+    font-weight: bold;
+    background-color: silver;
+}
+/* end Table */

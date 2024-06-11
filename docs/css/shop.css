@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1758ae;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 90vh;
+}
+
+/* Flex Boxes set */
+
+li {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #1758ae;
+    font-weight: bold;
+}
+
+/* Lists and Links set */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(189, 224, 255);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Important: If you want to use justify-content and it is not working, select the above element and give it flex-grow: 1*/
+/* Finished with flex header. Adding hover links. */
+
+.hidden {
+    display: none;
+    background-color: rgba(189, 224, 255);
+    padding: 8px;
+    border-radius: 7px;
+    left: -8px;
+}
+
+
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    margin: 25px;
+}
+
+header nav ul li:hover .hidden {
+    display: block;
+    position: absolute;
+}
+/* To add a valid popup, hide the so called popup by using display: none; after that select the list item that when hovered on and is followed by the hidden class and set it to position absolute and display block. you can change all the fancy stuff in the hidden class. if you want to move the container, select the list item you will hover on and put that relative!*/
+
+/*HEADER NAV IS FINISHED. ADDING SIDEBAR!*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    padding-top: 5px;
+}
+
+main > nav.sidenav {
+    display: flex;
+    max-width: 250px;
+    flex-grow: 1;
+}
+
+@media (max-width: 1220px) {
+    main > nav.sidenav {
+        display: none;
+    }
+}
+
+main > nav.sidenav > ul > li {
+    padding: 10px 8px 8px 8px;
+    border-bottom: 1px solid rgb(0, 36, 78);
+}
+
+.current {
+    font-weight: bold;
+}
+
+main > section.main-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* finnished with homework*/
+
+main section.main-content article {
+    display: flex;
+    flex-direction: column;
+}
+
+main section.main-content article section.moebel-devices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+main section.main-content article section.moebel-devices article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(205, 205, 205, 0.735);
+    align-items: center;
+    border-radius: 15px;
+    transition: filter 0.6s ease;
+}
+
+main section.main-content article section.moebel-devices article a {
+    justify-content: center;
+    align-items: center;
+}
+
+main section.main-content article section.moebel-devices article:hover {
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px;
+    background-color: rgba(205, 205, 205, 0.3);
+    
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+img {
+    border-radius: 15px;
+}
+
+main section article h1 {
+    color: #1758ae;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.company {
+    color: black;
+}
+
+.desc {
+    font-size: large;
+    font-weight: bold;
+}
+
+.preis {
+    color: #13488c;
+    font-weight: bold;
+}
+
+.groesse {
+    font-size: small;
+    color: black;
+}
+
+.copyright {
+    font-size: small;
+    padding-bottom: 10px;
+}
+
+#license-text {
+    text-align: justify;
+    margin: 10px;
+    font-size: small;
+}
+
+div#license-text h1, h2, h3, h4, h5, h6 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+section.main-content-license > h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main-contact {
+    padding-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: bold;
+    background-color: #e2efff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+footer a {
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+article.product1 h1 {
+    padding-bottom: 20px;
+    font-size: xx-large;
+}
+
+article.product1 section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.productdesc {
+    color: rgb(61, 61, 61);
+    font-style: italic;
+}
+
+article.product1 section ul {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+article.product1 section ul .company {
+    font-size: x-large;
+    color: #1758ae;
+}
+
+article.product1 section ul .preis {
+    font-size: x-large;
+    color: red;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+article.product1 section ul .preis button {
+    width: 100px;
+    align-self: flex-end;
+}
+
+/*Homework for 3.5*/
+
+main section.main-content nav ul {
+    display: flex;
+    justify-content: flex-start;
+    color: #1758ae;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main section.main-content nav ul li:not(:first-child)::before {
+    content: '>';
+}
+
+/* End Homework for 3.5*/
+
+table {
+    background-color: transparent;
+}
+
+table td {
+    padding: 5px;
+    background-color: rgb(240, 250, 255);
+    border-radius: 5px;
+}
+
+table tbody td:nth-child(odd) {
+    font-weight: bold;
+}
+
+section.yap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
+    flex-shrink: 1;
+}

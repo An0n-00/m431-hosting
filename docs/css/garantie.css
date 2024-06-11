@@ -1,0 +1,144 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    text-shadow: 5px 5px 5px lightgray;
+    color: dodgerblue;
+    margin-bottom: 25px;
+}
+
+body {
+    padding: 16px;
+}
+
+.rechnungsadresse {
+    margin-left: auto;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.ort {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: small;
+    margin-top: 130px;
+    height: 00px;
+}
+
+.trust {
+    font-size: small;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.anhang {
+    margin-bottom: 15px;
+}
+
+.anhang ol {
+    padding-left: 19px;
+}
+
+img.test {
+    border: 1px solid black;
+    box-shadow: 10px 10px 15px silver;
+}
+
+p > a {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: large;
+    display: inline;
+}
+
+h3 > a {
+    color: #4fa8ff;
+    font-weight: bold;
+}
+
+h2 > a {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+}
+
+
+/* Lists */
+ul[role=menu] {
+    width: 345px;
+    height: 245px;
+    padding-top: 28px;
+    padding-left: 28px;
+    border-radius: 40px;
+    background-color: #d5d5d5;
+    list-style-type: disc;
+}
+
+ul[role=menu] > li > a {
+    text-shadow: 5px 5px 5px silver;
+    color: #4fa8ff;
+    line-height: 2;
+    font-weight: bold;
+    font-size: x-large;
+}
+/* end Lists */
+
+/* Table */
+table {
+    background-color: #e8e8e8;
+    box-shadow: 1px 1px 2px darkgray;
+    border-radius: 4px;
+    border-spacing: 13px;
+    margin-bottom: 60px;
+}
+
+table > thead {
+    color: gray;
+    font-weight: normal;
+    text-align: left;
+}
+
+table a {
+    color: #5e95c5;
+    font-weight: bold;
+}
+
+.paid {
+    color: #07c600;
+}
+
+.garantiezeit {
+    font-weight: bold;
+}
+
+table.details {
+    text-align: left;
+    vertical-align: top;
+}
+
+table.details tr.topic > * {
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+table.details [scope="row"] {
+    color: #888;
+    vertical-align: text-top;
+}
+
+.details tr:nth-child(odd) > td:last-child {
+    color: #888;
+}
+
+/* end Table */

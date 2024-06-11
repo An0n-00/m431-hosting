@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<html>
+    <head>
+        <title>Shop</title>
+        <link rel="stylesheet" href="/css/shop.css">
+        <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <a href="/shop.html" role="img" aria-label="Logo of the Contasa Corporation in Switzerland"><img src="/images/contasa_logo.png" alt="logo" width="150px"></a>
+                <nav>
+                    <ul role="menubar">
+                        <li role="none">
+                            <a href="#" role="menuitem">Bürobedarf</a>
+                            <ul class="hidden" role="menu">
+                                <li role="none"><a href="#" role="menuitem">Arbeitsplatz</a></li>
+                                <li role="none"><a href="#" role="menuitem">Möbel</a></li>
+                                <li role="none"><a href="#" role="menuitem">Kleber</a></li>
+                                <li role="none"><a href="#" role="menuitem">Schneiden</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="none">
+                            <a href="#" role="menuitem">Netzwerk</a>
+                            <ul class="hidden" role="menu">
+                                <li role="none"><a href="#" role="menuitem">Router / Firewall</a></li>
+                                <li role="none"><a href="#" role="menuitem">Kabel</a></li>
+                                <li role="none"><a href="#" role="menuitem">NAS</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="none">
+                            <a href="#" role="menuitem">Mobile</a>
+                            <ul class="hidden" role="menu">
+                                <li role="none"><a href="#" role="menuitem">Notebook</a></li>
+                                <li role="none"><a href="#" role="menuitem">Tablet</a></li>
+                                <li role="none"><a href="#" role="menuitem">Mobile Phones</a></li>
+                                <li role="none"><a href="#" role="menuitem">Convertibles</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="none">
+                            <a href="#" role="menuitem">PC Komponenten</a>
+                            <ul class="hidden" role="menu">
+                                <li role="none"><a href="#" role="menuitem">Gehäuse</a></li>
+                                <li role="none"><a href="#" role="menuitem">Grafikkarte</a></li>
+                                <li role="none"><a href="#" role="menuitem">Mainbaord</a></li>
+                                <li role="none"><a href="#" role="menuitem">Prozessor</a></li>
+                                <li role="none"><a href="#" role="menuitem">RAM</a></li>
+                            </ul>
+                        </li>
+
+                        <li role="none">
+                            <a href="/index.html" role="menuitem">Return to Rechnungen</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <nav class="sidenav" role="navigation">
+                    <ul>
+                        <li><a href="#">Gesamtsortiment</a></li>
+                        <li><a href="#" class="current">Möbel</a></li>
+                        <li><a href="#">&nbsp;   Aktenschränke</a></li>
+                        <li><a href="#">&nbsp;   Büroregal</a></li>
+                        <li><a href="#">&nbsp;   Trennwand</a></li>
+                        <li><a href="#">&nbsp;   Schreibtisch</a></li>
+                    </ul>
+                </nav>
+                <section class="main-content">
+                    <nav>
+                        <ul>
+                            <li>Home&nbsp;</li>
+                            <!-- <li>&nbsp; > &nbsp;</li> -->
+                            <li>&nbsp;Möbel</li>
+                        </ul>
+                    </nav>
+                    <article>
+                        <h1>Möbel</h1>
+                        <section class="moebel-devices">
+                            <article class="product1">
+                                <a href="/pages/product1.html">
+                                    <img src="/images/product1.jpg" alt="Gaming PC" width="200px"></img>
+                                    <p class="desc">Schreibtisch</p>
+                                    <ul>
+                                        <li class="company">Casaria Schreibtisch</li>
+                                        <li class="preis">169.95 CHF</li>
+                                        <li class="groesse">160 x 75 x 118 cm</li>
+                                    </ul>
+                                </a>
+                            </article>
+                            
+                            <article class="product2">
+                                <a href="#">
+                                    <img src="/images/product2.webp" alt="Laptop" width="200px"></img>
+                                    <p class="desc">Schreibtisch</p>
+                                    <ul>
+                                        <li class="company">Songmics Industrial</li>
+                                        <li class="preis">270.- CHF</li>
+                                        <li class="groesse">150 x 70 x 100 cm</li>
+                                    </ul>
+                                </a>
+                            </article>
+
+                            <article class="product3">
+                                <a href="#">
+                                    <img src="/images/product3.jpg" alt="Home PC" width="200px"></img>
+                                    <p class="desc">Schreibtisch</p>
+                                    <ul>
+                                        <li class="company">Vasagle Industrial Desk</li>
+                                        <li class="preis">129.- CHF</li>
+                                        <li class="groesse">140 x 60 x 75 cm</li>
+                                    </ul>
+                                </a>
+                            </article>
+
+                            <article class="product4">
+                                <a href="#">
+                                    <img src="/images/product4.jpg" alt="Schreibtisch" width="200px"></img>
+                                    <p class="desc">Schreibtisch</p>
+                                    <ul>
+                                        <li class="company">ByLiving LOBO</li>
+                                        <li class="preis">485.- CHF</li>
+                                        <li class="groesse">138 x 55 x 75 cm</li>
+                                    </ul>
+                                </a>
+                            </article>
+                            <script>
+                            $('main section.main-content article section.moebel-devices article').hover(function() {
+                                // On hover, add a 'blur' class to all other articles
+                                $('main section.main-content article section.moebel-devices article').not(this).addClass('blur');
+                            }, function() {
+                                // When hover ends, remove the 'blur' class from all articles
+                                $('main section.main-content article section.moebel-devices article').removeClass('blur');
+                            }); 
+                            </script>
+                        </section>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <a href="/pages/copyright.html"><p class="copyright">Copyright &copy; Contasa Corp.</p></a>
+                <a href="/pages/kontakt.html"><p class="kontakt">Kontakt</p></a>
+            </footer>
+        </div>
+    </body>
+</html>

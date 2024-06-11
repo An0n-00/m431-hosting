@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px minmax(65%, 100vh) 1fr;
+    grid-template-rows: 150px 1fr 200px;
+    grid-template-areas: "header header div" "menu main article" "footer footer footer";
+    gap: 5px;
+    background-color: #2196F3;
+    height: 100vh;
+}
+
+.grid-container > * {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 100vh;
+}
+
+body > div.grid-container {
+    grid-column-start: 2 / 3;
+}
+
+body > div {
+    grid-column: 2;
+    grid-row: 1;
+}
+</style>
+</head>
+<body style="grid-area: content;">
+    <div class="grid-container">
+        <header>logo</header>
+        <header>
+            <menu>
+                menubar
+            </menu>
+        </header>
+        <div><i>empty</i></div>
+        <nav>Sidenav</nav>
+        <main>main content</main>
+        <div><i>article, information</i></div>
+        <footer><i>Logo and important information</i></footer>
+        <footer><nav><i>links</i></nav></footer>
+        <footer><i>footer</i></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Rechnung</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="grid">
+    <div class="content">
+        <header>
+            <img class="test" src="/images/contasa_logo.png" alt="Accounting" usemap="#clickarea">
+            <map name="clickarea">
+                <area shape="circle" coords="72,72,56" href="index.html" alt="Home">
+            </map>
+        </header>
+        
+        <main>
+            <div class="lieferadresse">
+                <h3>Lieferadresse:</h3>
+                <p>Hans Muster</p>
+                <p>Musterstrasse 42</p>
+                <p>8645 Jona</p>
+            </div>
+            
+            <div class="rechnungsadresse">
+                <h3 class="adresse">Rechnungsadresse:</h3>
+                <p class="adresse">Privat</p>
+                <p class="adresse">z.Hd. <strong>Hans Muster</strong></p>
+                <p class="adresse">Musterstrasse 42</p>
+                <p class="adresse">8645 Jona</p>
+            </div>
+            
+            <div class="ort">
+                <h2>Rapperswil, 28. Juli 2021</h2>
+            </div>
+            
+            <h1>Rechnung 01-234567-89</h1>
+            
+            <div class="table" id="warentabelle">
+                <table>
+                    <caption>Gemäss Ihrer Bestellung liefern wir Ihnen wie folgt:</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Beschreibung</th>
+                            <th scope="col"> Preis [CHF]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1.</th>
+                            <td>Apple iPhone 12</td>
+                            <td>741.-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2.</th>
+                            <td>Apple MacSafe Battery</td>
+                            <td>105.-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3.</th>
+                            <td>Apple AirPods Pro</td>
+                            <td>209.-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Subtotal:</th>
+                            <td>1055.-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <div class="trust">
+                <p>
+                    Vielen Dank für Ihr Vertrauen.<br>
+                    Freundliche Grüsse<br>
+                    Contasa Corp.
+                </p>
+            </div>
+            
+            <div class="anhang">
+                <h2>Anhang</h2>
+                <ol>
+                    <li><a href="garantieschein.html">Garantieschein</a></li>
+                    <li>Begleitschreiben</li>
+                </ol>
+            </div>
+        </main>
+        
+        <footer>
+            <p>
+                <a href="pages/rechnungen.html">Alle Bestellungen</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
